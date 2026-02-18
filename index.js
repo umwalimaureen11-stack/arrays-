@@ -71,5 +71,35 @@ console.log(studentName.indexOf("Alice"));
 // b
 console.log(studentName.lastIndexOf("Alice"));
 // c
-console.log()
+console.log(studentNames.includes("Charlie"));
+//d
+console.log(studentNames.includes("Eve"));
 
+
+// exercise 5 : Advanced searching with
+//EXERCISE 5:Advanced searching with find and findIndex
+
+const products =[
+   
+     {id:1,Name:"laptop",price:1200},
+       {id:2,Name:"smartphone",price:25},
+        {id:3,Name:"Tablet",price:75},
+         {id:4,Name:"headphone",price:199},
+];
+//a
+let foundProducts=products.find(product => product.id===2);
+console.log(foundProducts);
+//b
+
+let foundIndex =products.findIndex(product=>product.price>1000);
+console.log (foundIndex)
+// exercise:6
+// a
+let userAges = [18, 24, 33, 16, 40];
+let hasMinor = userAges.some(age => age < 18);
+
+console.log(hasMinor);
+// b
+let allAdults = userAges.every(age => age >= 18);
+
+console.log(allAdults);
